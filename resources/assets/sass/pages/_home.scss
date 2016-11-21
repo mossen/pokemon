@@ -7,37 +7,27 @@ body{
     transition: 0.4s;
   }
 
-.products {
+.pokemons {
   .panel{
     box-shadow: 6px 8px 5px rgba(0, 0, 0, 0.05);
     transition: 0.4s;
 
     &:hover {
       border-color: #bdbdbd;
+      cursor: pointer;
     }
+
+
   }
 
-  .product{
 
-    img{
+
+  .pokemon{
+
+    img.pokemon{
+      margin-top: 5px;
       margin-bottom: 10px;
-    }
-
-    .description{
-      min-height: 140px;
-    }
-
-    .name{
-      min-height: 60px;
-    }
-    .title{
-      margin: 0;
-      font-size: 12px;
-    }
-
-    .panel{
-      padding: 10px;
-      min-height: 650px;
+      width: 90%;
     }
   }
 }
@@ -52,6 +42,7 @@ body{
     top: 0;
 
     img {
+      margin-top: 5px;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -69,12 +60,35 @@ body{
     display: none !important;
   }
 
+  .pokemon-details{
+
+    .no-pokemon{
+      height: 200px;
+
+      p{
+        margin-top: 30px;
+      }
+    }
+
+    img{
+      margin-top: 5px;
+      width: 90%;
+
+    }
+
+    #sprite{
+      width: 20%;
+    }
+
+    text-align: center;
+  }
+
 }
 
 @media (min-width: 767px) and (max-width: 992px){
-  .products {
+  .pokemons {
 
-    .product {
+    .pokemon {
 
       img {
         width: 90%;
@@ -82,3 +96,7 @@ body{
     }
   }
 }
+
+
+
+

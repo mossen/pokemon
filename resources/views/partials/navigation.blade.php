@@ -9,13 +9,13 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand visible-xs" href="{{url('/home')}}">Assessment</a>
+                <a class="navbar-brand visible-xs" href="{{url('/podex')}}">Pokemon</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav pull-left">
                     <li>
-                        <a href="{{url('/home')}}" class="@if(Request::path() == '/') active @endif">Home</a>
+                        <a href="{{url('/podex')}}" class="@if(Request::path() == '/') active @endif">Home</a>
                     </li>
                     
 

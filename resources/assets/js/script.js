@@ -1,39 +1,31 @@
-var app = angular.module('assessmentApp', []);
-app.controller('assessmentCtrl', function ($scope, $http) {
 
-    $scope.sendForm = function (event,form){
-        event.preventDefault();
-        $scope.loading = true;
 
-        var config = {
-            headers : {
+$( document ).ready(function() {
 
-                'X-Requested-With': 'XMLHttpRequest'
-            }
-        }
+    //Showing selected pokemon with details
+    $(".pokemons").on("click", "#thumbnail", function () {
 
-        $http.post('/assessment/public/home', {'url' : $scope.url}, config)
-            .success(function (response, status, headers, config) {
 
-                if (response.message == "ERROR")
-                {
-                    $scope.products= [];
-                    $scope.error = true;
-                    $scope.loading = false;
-                    return;
-                }
 
-                $scope.error = false;
-                $scope.products = response['product'];
-                $scope.loading = false;
-            })
-            .error(function (data, status, header, config) {
-                $scope.status = status;
-            });
+        //Send Ajax Request
+        var url = $(".pokemon-details").attr("data-url") + "/" + $(this).find(".id").text();
 
-    };
+        $.ajax({
+            url: url
+        }).done(function(response) {
+
+            result = jQuery.parseJSON(response);
+            console.log( result );
+            $(".pokemon-details #img").attr("src", $(".pokemon-details #img").attr("data-src") + "/" + result["id"] + result["ename"] + ".png");
+            $(".pokemon-details #sprite").attr("src", $(".pokemon-details #sprite").attr("data-src") + "/" + result["id"] + "MS.png");
+        });
+
+
+    });
 
 });
+
+
 
 
 

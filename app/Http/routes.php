@@ -2,8 +2,8 @@
 
 Route::get('/', function ()
 {
-    return redirect('/home');
+    return redirect('/podex');
 });
 
-Route::get('/home', 'ProductController@index');
-Route::post('/home', 'ProductController@handel');
+Route::get('/podex', 'ProductController@index');
+Route::get('/podex/pokemon/{id}', 'ProductController@ajaxRequest');

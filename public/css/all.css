@@ -5,28 +5,17 @@ body main {
 body .btn {
   transition: 0.4s; }
 
-body .products .panel {
+body .pokemons .panel {
   box-shadow: 6px 8px 5px rgba(0, 0, 0, 0.05);
   transition: 0.4s; }
-  body .products .panel:hover {
-    border-color: #bdbdbd; }
+  body .pokemons .panel:hover {
+    border-color: #bdbdbd;
+    cursor: pointer; }
 
-body .products .product img {
-  margin-bottom: 10px; }
-
-body .products .product .description {
-  min-height: 140px; }
-
-body .products .product .name {
-  min-height: 60px; }
-
-body .products .product .title {
-  margin: 0;
-  font-size: 12px; }
-
-body .products .product .panel {
-  padding: 10px;
-  min-height: 650px; }
+body .pokemons .pokemon img.pokemon {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 90%; }
 
 body .loading {
   width: 100%;
@@ -38,6 +27,7 @@ body .loading {
   transition: 0.4s;
   top: 0; }
   body .loading img {
+    margin-top: 5px;
     position: absolute;
     top: 50%;
     left: 50%; }
@@ -51,8 +41,20 @@ body [data-ng-cloak], body [x-ng-cloak],
 body .ng-cloak, body .x-ng-cloak {
   display: none !important; }
 
+body .pokemon-details {
+  text-align: center; }
+  body .pokemon-details .no-pokemon {
+    height: 200px; }
+    body .pokemon-details .no-pokemon p {
+      margin-top: 30px; }
+  body .pokemon-details img {
+    margin-top: 5px;
+    width: 90%; }
+  body .pokemon-details #sprite {
+    width: 20%; }
+
 @media (min-width: 767px) and (max-width: 992px) {
-  .products .product img {
+  .pokemons .pokemon img {
     width: 90%; } }
 
 /*!
