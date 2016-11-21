@@ -17,21 +17,6 @@ body .pokemons .pokemon img.pokemon {
   margin-bottom: 10px;
   width: 90%; }
 
-body .loading {
-  width: 100%;
-  height: 100%;
-  background: #dedede;
-  z-index: 10;
-  position: absolute;
-  opacity: 0.3;
-  transition: 0.4s;
-  top: 0; }
-  body .loading img {
-    margin-top: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%; }
-
 body footer {
   background: #f5f3f3;
   padding-top: 10px; }
@@ -42,6 +27,7 @@ body .ng-cloak, body .x-ng-cloak {
   display: none !important; }
 
 body .pokemon-details {
+  position: relative;
   text-align: center; }
   body .pokemon-details .no-pokemon {
     height: 200px; }
@@ -52,6 +38,13 @@ body .pokemon-details {
     width: 90%; }
   body .pokemon-details #sprite {
     width: 20%; }
+  body .pokemon-details .first-tr {
+    border-top: 1px solid #dddddd; }
+  body .pokemon-details .loading {
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 15px); }
 
 @media (min-width: 767px) and (max-width: 992px) {
   .pokemons .pokemon img {

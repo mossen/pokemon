@@ -12,6 +12,8 @@
                     <hr>
                     <p>Can you catch them all?</p>
 
+
+
                     @include('partials.errors')
                     @include('partials.flash-message')
                     <hr>
@@ -21,7 +23,8 @@
         </div>
         <div class="row">
             <div class="box">
-                <div class="col-lg-12">
+                <div class="col-lg-12" id="pokemon-panel">
+                    @include('home.partials.panel')
 
                     @include('home.partials.pokemons')
                 </div>

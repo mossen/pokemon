@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Assessment | @yield('title')</title>
+    <title>Pokemon | @yield('title')</title>
 
 
     <link href="{{URL::to('css/all.css')}}" rel="stylesheet">
@@ -20,10 +20,38 @@
     <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
 
 
-    <!-- jQuery
-    <script src="js/jquery.js"></script>-->
+    <!-- -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="http://jplist.com/content/css/vendor/jquery-ui.css" />
+    <link href="http://jplist.com/content/css/jplist.demo-pages.min.css?v=1" rel="stylesheet" type="text/css" />
+    <link href="http://jplist.com/content/css/jplist.core.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://jplist.com/content/css/jplist.filter-toggle-bundle.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://jplist.com/content/css/jplist.pagination-bundle.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://jplist.com/content/css/jplist.history-bundle.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://jplist.com/content/css/jplist.textbox-filter.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://jplist.com/content/css/jplist.jquery-ui-bundle.min.css" rel="stylesheet" type="text/css" />
+
+
+    <!-- js -->
+    <script src="http://jplist.com/content/js/vendor/modernizr.min.js"></script>
+    <script src="http://jplist.com/content/js/vendor/jquery.lazyload.min.js"></script>
+
+
+    <script src="http://jplist.com/content/js/vendor/jquery-ui.js"></script>
+    <script src="http://jplist.com/content/js/jplist/5.2.0/jplist.core.min.js"></script>
+    <script src="http://jplist.com/content/js/jplist/5.2.0/jplist.filter-dropdown-bundle.min.js"></script>
+    <script src="http://jplist.com/content/js/jplist/5.2.0/jplist.filter-toggle-bundle.min.js"></script>
+    <script src="http://jplist.com/content/js/jplist/5.2.0/jplist.history-bundle.min.js"></script>
+    <script src="http://jplist.com/content/js/jplist/5.2.0/jplist.jquery-ui-bundle.min.js"></script>
+    <script src="http://jplist.com/content/js/jplist/5.2.0/jplist.pagination-bundle.min.js"></script>
+    <script src="http://jplist.com/content/js/jplist/5.2.0/jplist.sort-bundle.min.js"></script>
+    <script src="http://jplist.com/content/js/jplist/5.2.0/jplist.textbox-filter.min.js"></script>
+
+
+
     <script src="js/all.js"></script>
 
         
@@ -36,12 +64,10 @@
 
 </head>
 
-<body ng-app="assessmentApp" ng-controller="assessmentCtrl">
+<body>
     
         @include('partials.navigation')
-        <div class="loading" ng-show="loading" ng-cloak="">
-            <img src="img/loading.svg">
-        </div>
+
         <main class="@yield('classes')">
         @section('main')
 
