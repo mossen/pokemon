@@ -12,7 +12,7 @@ body .pokemons .panel {
     border-color: #bdbdbd;
     cursor: pointer; }
 
-body .pokemons .pokemon img.pokemon {
+body .pokemons .pokemon .img-pokemon {
   margin-top: 5px;
   margin-bottom: 10px;
   width: 90%; }
@@ -29,6 +29,8 @@ body .ng-cloak, body .x-ng-cloak {
 body .pokemon-details {
   position: relative;
   text-align: center; }
+  body .pokemon-details .set-type:nth-last-of-type(odd) {
+    margin-left: 5px; }
   body .pokemon-details .no-pokemon {
     height: 200px; }
     body .pokemon-details .no-pokemon p {

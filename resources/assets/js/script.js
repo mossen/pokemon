@@ -18,6 +18,17 @@ $( document ).ready(function() {
             $(".pokemon-details #img").attr("src", $(".pokemon-details #img").attr("data-src") + "/" + result["id"] + result["ename"] + ".png");
             $(".pokemon-details #sprite").attr("src", $(".pokemon-details #sprite").attr("data-src") + "/" + result["id"] + "MS.png");
 
+            $(".pokemon-details .name").text(result["name"]);
+            $(".pokemon-details .id").text(result["id"]);
+            $(".pokemon-details .set-type").remove();
+            for (type in result["type"])
+            {
+                console.log(result["type"][type]);
+                var span = $(".pokemon-details .init-type").clone();
+                $(span).removeClass("init-type").addClass("set-type").text(result["type"][type]).appendTo( $(".pokemon-details .type"));
+            }
+
+            $(".pokemon-details .name").text(result["name"]);
             $(".pokemon-details #attack").text(result["base"]["Attack"]);
             $(".pokemon-details #defense").text(result["base"]["Defense"]);
             $(".pokemon-details #hp").text(result["base"]["HP"]);
@@ -31,7 +42,6 @@ $( document ).ready(function() {
         });
 
     });
-
 
 
 

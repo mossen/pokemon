@@ -8,24 +8,13 @@
 
         <div class="row">
             <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <p>Can you catch them all?</p>
-
-
-
-                    @include('partials.errors')
-                    @include('partials.flash-message')
-                    <hr>
-                </div>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="box">
                 <div class="col-lg-12" id="pokemon-panel">
-                    @include('home.partials.panel')
+                    <div class="row">
+                        <p>Can you catch them all?</p>
+                        @include('home.partials.panel')
 
+                    </div>
+                    <hr>
                     @include('home.partials.pokemons')
                 </div>
             </div>

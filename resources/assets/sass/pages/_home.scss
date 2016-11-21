@@ -24,7 +24,7 @@ body{
 
   .pokemon{
 
-    img.pokemon{
+    .img-pokemon{
       margin-top: 5px;
       margin-bottom: 10px;
       width: 90%;
@@ -45,6 +45,10 @@ body{
   }
 
   .pokemon-details{
+    .set-type:nth-last-of-type(odd)
+    {
+      margin-left: 5px;
+    }
 
     .no-pokemon{
       height: 200px;
