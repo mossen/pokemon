@@ -43,10 +43,10 @@ body .pokemon-details {
   body .pokemon-details .first-tr {
     border-top: 1px solid #dddddd; }
   body .pokemon-details .loading {
-    width: 30px;
+    width: 40px;
     position: absolute;
     top: 50%;
-    left: calc(50% - 15px); }
+    left: calc(50% - 20px); }
 
 @media (min-width: 767px) and (max-width: 992px) {
   .pokemons .pokemon img {
