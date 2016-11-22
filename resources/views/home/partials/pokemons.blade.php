@@ -7,11 +7,6 @@
                     <img class="img-pokemon" src="{{ URL("img/thm/$pokemon->id" . preg_replace('/[^-,;a-zA-Z0-9_]/', "", $pokemon->ename)) .".png" }}" alt="">
                     <p class="name">{{ $pokemon->ename }}</p>
                     <p class="id">{{ $pokemon->id }}</p>
-                    <p class="type">
-                        @foreach($pokemon->type as $type)
-                            <span>{{ $type }}</span>
-                        @endforeach
-                    </p>
                 </div>
             </div>
         @endforeach
