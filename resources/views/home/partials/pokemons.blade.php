@@ -4,7 +4,7 @@
             <div class="col-sm-2 text-center pokemon">
                 <div class="panel panel-default" id="thumbnail">
 
-                    <img class="img-pokemon" src="{{ URL("img/thm/$pokemon->id" . "$pokemon->ename.png") }}" alt="">
+                    <img class="img-pokemon" src="{{ URL("img/thm/$pokemon->id" . preg_replace('/[^-,;a-zA-Z0-9_]/', "", $pokemon->ename)) .".png" }}" alt="">
                     <p class="name">{{ $pokemon->ename }}</p>
                     <p class="id">{{ $pokemon->id }}</p>
                     <p class="type">

@@ -15,7 +15,7 @@ $( document ).ready(function() {
         }).done(function(response) {
 
             result = jQuery.parseJSON(response);
-            $(".pokemon-details #img").attr("src", $(".pokemon-details #img").attr("data-src") + "/" + result["id"] + result["ename"] + ".png");
+            $(".pokemon-details #img").attr("src", $(".pokemon-details #img").attr("data-src") + "/" + result["id"] + result["ename"]+ ".png");
             $(".pokemon-details #sprite").attr("src", $(".pokemon-details #sprite").attr("data-src") + "/" + result["id"] + "MS.png");
 
             $(".pokemon-details .name").text(result["name"]);
