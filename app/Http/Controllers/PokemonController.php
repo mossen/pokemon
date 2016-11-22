@@ -8,7 +8,7 @@ use App\Http\Pokemon;
 use App\Http\Requests;
 use Mockery\CountValidator\Exception;
 
-class ProductController extends Controller
+class PokemonController extends Controller
 {
     /**
      * Display a index page.

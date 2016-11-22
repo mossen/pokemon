@@ -1,16 +1,25 @@
 @if(isset($pokemons))
     <div class="col-lg-8 col-md-9 pokemons" >
+
         @foreach($pokemons as $pokemon)
             <div class="col-sm-2 text-center pokemon">
                 <div class="panel panel-default" id="thumbnail">
-
                     <img class="img-pokemon" src="{{ URL("img/thm/$pokemon->id" . preg_replace('/[^-,;a-zA-Z0-9_]/', "", $pokemon->ename)) .".png" }}" alt="">
                     <p class="name">{{ $pokemon->ename }}</p>
                     <p class="id">{{ $pokemon->id }}</p>
                 </div>
             </div>
         @endforeach
+
+
+
     </div>
+
+    <!-- no results found -->
+    <div class="col-lg-12 jplist-no-results">
+        <p>No results found</p>
+    </div>
+
     <div class="col-lg-4 col-md-3 pokemon-details" data-url="{{ url("/podex/pokemon/") }}">
 
         <img src="{{ url("img/loading1.svg") }}" alt="" class="loading hidden">

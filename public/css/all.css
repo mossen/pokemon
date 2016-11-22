@@ -17,6 +17,12 @@ body .pokemons .pokemon .img-pokemon {
   margin-bottom: 10px;
   width: 90%; }
 
+body .customized-input {
+  height: 30px; }
+
+body .jplist-no-results {
+  text-align: center; }
+
 body footer {
   background: #f5f3f3;
   padding-top: 10px; }

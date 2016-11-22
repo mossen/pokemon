@@ -13,8 +13,6 @@
             <li><span data-path=".name" data-order="desc" data-type="text">Title Z-A</span></li>
             <li><span data-path=".id" data-order="asc" data-type="text">ID 0-9</span></li>
             <li><span data-path=".id" data-order="desc" data-type="text">ID 9-0</span></li>
-            <li><span data-path=".type" data-order="asc" data-type="text">Type Z-A</span></li>
-            <li><span data-path=".type" data-order="desc" data-type="text">Type Z-A</span></li>
         </ul>
     </div>
 
@@ -38,6 +36,7 @@
         <div class="jplist-label">Filter by ID:</div>
         <![endif]-->
 
-        <input data-path=".id" type="text" value="" placeholder="Filter by Name" data-control-type="textbox" data-control-name="model-text-filter" data-control-action="filter">
+        <input class="customized-input" data-path=".id" type="number" value="" placeholder="Filter by ID" data-control-type="textbox" data-control-name="id-text-filter" data-control-action="filter">
     </div>
+
 </div>
